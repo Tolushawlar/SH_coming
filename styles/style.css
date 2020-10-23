@@ -1,0 +1,139 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(79, 80, 80);
+    height: 40px;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav p{
+    font-family: serif;    
+    font-weight: bold;
+    color: rgb(181, 202, 202);
+}
+
+.nav h3{
+    color: rgb(181, 202, 202);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right p{
+    margin-left: 10px;
+}
+
+.header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    height: 100vh;
+}
+.content .content-left img{
+    width: 70vw;
+}
+
+.content .content-right{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(246, 242, 242,0.5);
+}
+
+.content .content-right p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.content .clock{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.content .clock p{
+    margin-left: 15px;
+}
+
+.clock .hr{
+    color: red;
+}
+
+.clock .min{
+    color: blue;
+}
+
+.clock .sec{
+    color: green;
+}
+
+.content .icons{
+    display: flex;
+    margin-left: 20px;
+}
+
+.content .icons .icon{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 40px;
+}
+
+.clock .sp{
+    font-size: 50px;
+}
+
+.clock .clk{
+    justify-content: center;
+    align-self: center;
+}
+
+@media only screen and (max-width:
+600px){
+    body{
+        overflow: visible;
+    }
+
+    .content{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .content .content-left img{
+        width: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .content .content-right{
+        width: auto;
+        text-align: center;
+        padding: 10px;
+    }
+}
